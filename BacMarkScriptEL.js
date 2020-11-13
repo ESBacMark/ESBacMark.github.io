@@ -14,7 +14,7 @@ function start(){
 
 }
 function check(){
-	let total=1;
+	let total=3;
 	let nonComp = 1;
 	for(var i = 0; i<subjects.length ;i++){
 		if(document.getElementById(subjects[i]).checked){
@@ -362,8 +362,8 @@ function checkErrors(NonComp, Total){
 		errorMsg += "<li>You need to choose L2.<br>";
 	}
 	if(document.getElementById("EP").checked == false){
-		errors++;
-		errorMsg += "<li> You need to choose EP.";
+		
+		errorMsg += "<li>You have not chosen EP. This is only possible if you are excused.</li>"
 	}
 	
 	if(document.getElementById("L1A").checked == true && document.getElementById("L2A").checked == true
@@ -412,7 +412,9 @@ function checkErrors(NonComp, Total){
 		  errorMsg += "<li>You need to have at least 29 periods others than complementary courses. You have now "+NonComp+" that kind of periods.";
 	}
 	if(errors==0){
-		errorMsg = "";
+		if(document.getElementById("EP").checked == false){
+			errorMsg = "<li>You have not chosen EP. This is only possible if you are excused.</li>"
+		}else{errorMsg = "";}
 		if(Total  > 35){
 		
 		errorMsg = "";
