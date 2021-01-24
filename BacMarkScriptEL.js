@@ -15,7 +15,7 @@ function start(){
 }
 function check(){
 	let total=3;
-	let nonComp = 1;
+	let nonComp = 3;
 	for(var i = 0; i<subjects.length ;i++){
 		if(document.getElementById(subjects[i]).checked){
 			subPeriods = document.getElementById(subjects[i]).getAttribute("data-periods");
