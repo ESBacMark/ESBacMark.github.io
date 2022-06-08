@@ -1,0 +1,23 @@
+body{
+	background-color: #5F8CBB;
+	font-family: Arial;
+}
+input{
+		height: 50px;
+		width: 50px;
+	}
+h1{
+	font-family:'Playball';font-size: 72px;
+}
+.name{
+	width: 500px;
+}
+.radio:hover{
+	font-size:30px;
+}
+#Question1, #Question2, #Question3, #Question4, #Question5, #Question6, #Question7, #Question8, #Question9, #Question10, #Question11, #Question12, #Question13, #Question14, #Question15, #Question16, #Question17, #Question18, #Question19, #Question20, #Question21, #Question22, #Question23, #Question24, #Question25, #Question26{
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+}
